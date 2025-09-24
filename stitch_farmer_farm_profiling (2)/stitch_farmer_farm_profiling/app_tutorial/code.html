@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Farming Assistant</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#ec6d13",
+            "background-light": "#f8f7f6",
+            "background-dark": "#221810",
+          },
+          fontFamily: {
+            "display": ["Lexend"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex flex-col min-h-screen w-full text-zinc-900 dark:text-zinc-100">
+<header class="flex justify-end p-4">
+<button class="flex items-center justify-center h-12 w-12 rounded-full bg-primary/10 dark:bg-primary/20 text-zinc-800 dark:text-zinc-200">
+<span class="material-symbols-outlined">help_outline</span>
+</button>
+</header>
+<main class="flex-grow flex flex-col justify-between">
+<div class="flex flex-col items-center px-6 text-center">
+<div class="flex space-x-2 my-6">
+<div class="w-2.5 h-2.5 rounded-full bg-primary"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-zinc-300 dark:bg-zinc-700"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-zinc-300 dark:bg-zinc-700"></div>
+</div>
+<h1 class="text-3xl font-bold text-zinc-900 dark:text-white">Your AI Farming Assistant</h1>
+<p class="mt-4 text-base text-zinc-600 dark:text-zinc-400 max-w-sm">
+          Get personalized advice, track your activities, and manage your farm efficiently with our AI-powered assistant.
+        </p>
+</div>
+<div class="px-4 mt-8">
+<div class="aspect-[3/2] w-full rounded-xl overflow-hidden shadow-lg">
+<div class="w-full h-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDrQmOAwL0VO85HIenzZucVR5O5S9e4hvi3j0e4DnaDvyZrLxD5IONE8N588xIUMf-SPtkCoGf0x_k2AR_U13hqv5ElZJPDwI9ZSDul79W_IeCuLjciTPX8872gAoKMdlGYXieq-QGJ_EC4xlOoI0RzfQZsxsTySdf3vGhoBpCDktaH_aTF5s_LhGtzfic04KdMiLJpEL0JcYav0v6w3FGvUlOhXI977d8afQNcPP8R0lQnxQH03rn2a1MDgvK56USaHAy2eHAA0Jc");'></div>
+</div>
+</div>
+<div class="px-6 py-8 mt-auto">
+<button class="w-full h-12 bg-primary text-white font-bold rounded-lg text-base shadow-lg shadow-primary/30">
+          Next
+        </button>
+</div>
+</main>
+</div>
+
+
+</body></html>
