@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Farming Assistant Permissions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec6d13",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221810",
+                        "content-light": "#221810",
+                        "content-dark": "#f8f7f6",
+                        "subtle-light": "#a8a29e",
+                        "subtle-dark": "#a8a29e"
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-content-light dark:text-content-dark">
+<div class="flex flex-col h-screen justify-between">
+<header class="p-4 flex items-center">
+<button class="p-2">
+<svg class="text-content-light dark:text-content-dark" fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path></svg>
+</button>
+</header>
+<main class="px-6 flex-grow flex flex-col justify-center">
+<div class="text-center mb-10">
+<h1 class="text-3xl font-bold mb-3 text-content-light dark:text-content-dark">Let's set you up</h1>
+<p class="text-subtle-light dark:text-subtle-dark">To give you the best experience, we need to ask for a few permissions.</p>
+</div>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="bg-primary/10 dark:bg-primary/20 p-3 rounded-xl">
+<svg class="text-primary" fill="currentColor" height="28" viewBox="0 0 256 256" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z"></path></svg>
+</div>
+<div>
+<h2 class="font-bold text-lg text-content-light dark:text-content-dark">Location Access</h2>
+<p class="text-subtle-light dark:text-subtle-dark text-sm">Required for personalized weather forecasts and market prices in your area.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="bg-primary/10 dark:bg-primary/20 p-3 rounded-xl">
+<svg class="text-primary" fill="currentColor" height="28" viewBox="0 0 256 256" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M221.8,175.94C216.25,166.38,208,139.33,208,104a80,80,0,1,0-160,0c0,35.34-8.26,62.38-13.81,71.94A16,16,0,0,0,48,200H88.81a40,40,0,0,0,78.38,0H208a16,16,0,0,0,13.8-24.06ZM128,216a24,24,0,0,1-22.62-16h45.24A24,24,0,0,1,128,216ZM48,184c7.7-13.24,16-43.92,16-80a64,64,0,1,1,128,0c0,36.05,8.28,66.73,16,80Z"></path></svg>
+</div>
+<div>
+<h2 class="font-bold text-lg text-content-light dark:text-content-dark">Notifications</h2>
+<p class="text-subtle-light dark:text-subtle-dark text-sm">To send you timely alerts for pest control, irrigation, and harvesting.</p>
+</div>
+</div>
+</div>
+</main>
+<footer class="p-6">
+<div class="grid grid-cols-2 gap-4">
+<button class="py-3 px-6 rounded-lg font-bold bg-background-light dark:bg-primary/20 text-content-light dark:text-content-dark">Deny</button>
+<button class="py-3 px-6 rounded-lg font-bold bg-primary text-white">Allow Access</button>
+</div>
+</footer>
+</div>
+
+</body></html>

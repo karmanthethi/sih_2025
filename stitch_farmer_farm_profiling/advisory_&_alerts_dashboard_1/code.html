@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Krishi Sahayak</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#17cf17",
+            "background-light": "#f6f8f6",
+            "background-dark": "#112111",
+          },
+          fontFamily: {
+            "display": ["Lexend"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<div class="flex-grow">
+<header class="flex items-center justify-between p-4 bg-background-light dark:bg-background-dark sticky top-0 z-10">
+<button class="text-gray-800 dark:text-gray-200">
+<svg class="feather feather-menu" fill="none" height="28" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg"><line x1="3" x2="21" y1="12" y2="12"></line><line x1="3" x2="21" y1="6" y2="6"></line><line x1="3" x2="21" y1="18" y2="18"></line></svg>
+</button>
+<h1 class="text-xl font-bold text-gray-900 dark:text-white flex-1 text-center">Krishi Sahayak</h1>
+<div class="w-7"></div>
+</header>
+<main class="p-4">
+<h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Today's Insights</h2>
+<div class="space-y-4">
+<div class="bg-white dark:bg-gray-800/20 rounded-xl shadow-sm overflow-hidden flex items-center gap-4">
+<div class="w-24 h-24 bg-center bg-no-repeat bg-cover flex-shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCVkjiE-t1CzSflw2x8eRgdGczgynpyOORgw-WWOtxK81sZbKseEPaJKd-Oodw6R56ev2wxfdvBLsHA_jnGZbOk8MAUOtRcKfdKnkezEP4ih2TezKTRx_NjIyDr_al95dyiNFZz_-5mGrkfzvwM59S_z32f_Xg4op3YL1_sPKYhmk2o3gL0r3X02ui0dcOUB9fPaolc-2442BrY99NDf-UVDo9-n8xbSZ7lGOSl6B7sEUsIfdweXU0hkIDkosFa75HIJXrwJdbu3bY");'></div>
+<div class="p-2">
+<p class="text-base font-bold text-gray-900 dark:text-white">Weather Alert: Heavy Rainfall Expected</p>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Prepare for heavy rainfall in your area. Secure crops and livestock.</p>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-800/20 rounded-xl shadow-sm overflow-hidden flex items-center gap-4">
+<div class="w-24 h-24 bg-center bg-no-repeat bg-cover flex-shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCWllJyJ9rpIw2CaQn1-8RrhXxmEnOSUexMs7DXT1Ym3YwauPZDvIV9rPZUWcr8ZEgR-_gUK_Y9r_ZB1Fxsmf4OM9TGZkefcURlUcUjSEQxompPWit3uhmXgXK1PHQ5znPeOnIRH0ufsnopXIjvR211W6Mnt8hFOx3vXq9buxKlrI1MvUF5954Jzw6D3-gUP-6x_MbngoN2froKgr7H99t8Y9DdeYMdQAy-vaW2vUTNA2De88b3Y8w8TsgELIQA0rc5677jWExaryE");'></div>
+<div class="p-2">
+<p class="text-base font-bold text-gray-900 dark:text-white">Crop Operation Reminder: Fertilize Paddy Fields</p>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1">It's time to apply the second dose of fertilizer to your paddy fields.</p>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-800/20 rounded-xl shadow-sm overflow-hidden flex items-center gap-4">
+<div class="w-24 h-24 bg-center bg-no-repeat bg-cover flex-shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCjxtkUt1gsqWsIY8ZIV-U0zOvR_Dg--PuBhQFBlNeI-dzAbWa1Nbo1UaiK0vVFGhfh0rJLJP0SHfI861kw0M1ZAURbD36wEwgwF4NzvSJ_ztplcRJNK4BlbbtadZr63FA4q8pyH2KiIlCuplYJXPMK4Q1dL6_tf8s3mKWIWOpXsN9TRIpA8szmsb9R7dhuj8V7KOy2thMT3NkYpIRVLOt7BCFIcTDzCWyFh-h8Mr1nV8OPH5ceEL89Iq4JTVaaVwG5F1-JKu311es");'></div>
+<div class="p-2">
+<p class="text-base font-bold text-gray-900 dark:text-white">Market Price Trend: Rubber Prices Up</p>
+<p class="text-sm text-gray-600 dark:text-gray-400 mt-1">Rubber prices have increased by 5%. Consider selling.</p>
+</div>
+</div>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-gray-200 dark:border-gray-800">
+<nav class="flex justify-around p-2">
+<a class="flex flex-col items-center justify-center gap-1 w-full text-primary" href="#">
+<svg class="text-primary" fill="currentColor" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 w-full text-gray-500 dark:text-gray-400" href="#">
+<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+<span class="text-xs font-medium">Chat</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 w-full text-gray-500 dark:text-gray-400" href="#">
+<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+<span class="text-xs font-medium">Activities</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 w-full text-gray-500 dark:text-gray-400" href="#">
+<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</nav>
+<div class="h-5 bg-background-light dark:bg-background-dark"></div>
+</footer>
+</div>
+
+</body></html>

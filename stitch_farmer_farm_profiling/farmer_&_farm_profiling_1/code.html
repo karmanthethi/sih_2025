@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Farmer &amp; Farm Profiling</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Lexend:wght@400;500;700;900" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        :root {
+            --saffron: #FF9933;
+            --white: #FFFFFF;
+            --green: #138808;
+            --blue-chakra: #000080;
+            --background-light: #F0F4F0; 
+            --text-light: #1C1C1E;
+            --placeholder-light: #6b7280;
+            --icon-light: #4B5563;
+        }
+        body {
+            font-family: 'Lexend', sans-serif;
+            background-color: var(--background-light);
+            color: var(--text-light);
+        }
+        .form-select {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236B7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+            background-position: right 0.5rem center;
+            background-repeat: no-repeat;
+            background-size: 1.5em 1.5em;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+        .ashoka-chakra {
+            width: 32px;
+            height: 32px;
+            border: 2px solid var(--blue-chakra);
+            border-radius: 50%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .spoke {
+            width: 1px;
+            height: 100%;
+            background: var(--blue-chakra);
+            position: absolute;
+            left: calc(50% - 0.5px);
+            transform-origin: center;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-white">
+<div class="flex flex-col min-h-screen">
+<header class="bg-saffron text-white shadow-md">
+<div class="container mx-auto px-4 py-3 flex items-center justify-between">
+<button class="p-2">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-xl font-bold">Farmer &amp; Farm Profiling</h1>
+<div class="w-8 h-8"></div>
+</div>
+</header>
+<main class="flex-1 bg-white">
+<div class="container mx-auto px-4 py-6 space-y-6">
+<div class="text-center">
+<div class="inline-block p-1 bg-white rounded-full border-2 border-green">
+<img alt="Farmer Profile Picture" class="w-28 h-28 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM1aAlZu_XqDJHp9M8f3ZJACkObpzOEffCNehqHsINU6fQ4ek78nwFoxdYRC4fV5b-nE-L6mAzFfzkiNOdAGNFtxf9s-UmVdNgpV_wL4_gZVMtbLtth6_kANEHM7lrbTj8VzCutr5x1P4iblSGQ4VJGrWD_WyW-gYt6RDZTfLK-jgT-3mvjNz-F2N5hgnxIDOmTMFmgrpHwAx-TPJDtf4DIIF0bGrmumkGVfbuxprl6v963bIhVZwu_FfLBsZqIH8PQ3aV3pNgdkc"/>
+</div>
+<button class="mt-2 text-sm text-green font-semibold flex items-center justify-center w-full">
+<span class="material-symbols-outlined mr-1 text-base">photo_camera</span>
+                        Upload Photo
+                    </button>
+</div>
+<div class="relative">
+<label class="block text-sm font-medium mb-1 text-gray-700" for="farmer-name">Full Name</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">person</span>
+<input class="w-full rounded-lg border border-gray-300 bg-gray-50 focus:ring-2 focus:ring-green focus:border-green h-12 pl-10 pr-4" id="farmer-name" name="farmer-name" placeholder="Enter your full name" type="text"/>
+</div>
+</div>
+<div class="relative">
+<label class="block text-sm font-medium mb-1 text-gray-700" for="phone-number">Phone Number</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">phone</span>
+<input class="w-full rounded-lg border border-gray-300 bg-gray-50 focus:ring-2 focus:ring-green focus:border-green h-12 pl-10 pr-4" id="phone-number" name="phone-number" placeholder="Enter your phone number" type="tel"/>
+</div>
+</div>
+<div class="relative">
+<label class="block text-sm font-medium mb-1 text-gray-700" for="location">Location (District)</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">location_on</span>
+<select class="form-select w-full rounded-lg border border-gray-300 bg-gray-50 focus:ring-2 focus:ring-green focus:border-green h-12 pl-10 pr-4 appearance-none" id="location" name="location">
+<option>Select your district</option>
+<option>Thiruvananthapuram</option>
+<option>Kollam</option>
+<option>Pathanamthitta</option>
+<option>Alappuzha</option>
+<option>Kottayam</option>
+<option>Idukki</option>
+<option>Ernakulam</option>
+<option>Thrissur</option>
+<option>Palakkad</option>
+<option>Malappuram</option>
+<option>Kozhikode</option>
+<option>Wayanad</option>
+<option>Kannur</option>
+<option>Kasaragod</option>
+</select>
+</div>
+</div>
+<div class="relative">
+<label class="block text-sm font-medium mb-1 text-gray-700" for="farm-size">Farm Size (in acres)</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">straighten</span>
+<input class="w-full rounded-lg border border-gray-300 bg-gray-50 focus:ring-2 focus:ring-green focus:border-green h-12 pl-10 pr-4" id="farm-size" name="farm-size" placeholder="e.g., 2.5" type="number"/>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-green p-4">
+<div class="container mx-auto">
+<button class="w-full h-12 bg-white text-green font-bold rounded-lg flex items-center justify-center shadow-md transform hover:scale-105 transition-transform duration-300">
+                    Save and Continue
+                    <span class="material-symbols-outlined ml-2">arrow_forward</span>
+</button>
+</div>
+</footer>
+</div>
+
+</body></html>
